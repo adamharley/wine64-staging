@@ -12,4 +12,4 @@ RUN dpkg --add-architecture i386 && \
 	apt-get purge -y apt-transport-https gnupg software-properties-common wget && \
 	apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENTRYPOINT ["wine64"]
+ENTRYPOINT ["wine"]
